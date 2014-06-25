@@ -1,5 +1,5 @@
 <?php
-exec ("echo /www/pineapple/stopairmon.sh | at now");
+exec ("echo /www/CrossFire/stopairmon.sh | at now");
 ?>
 <html><head>
 <meta http-equiv="refresh" content="5; url=wait.php">

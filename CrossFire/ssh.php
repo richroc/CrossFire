@@ -76,7 +76,7 @@ exec("echo ' ' > /root/.ssh/known_hosts");
 <html>
 <head>
 <?php if(isset($_GET[goback])){ 
-echo "<meta http-equiv=\"refresh\" content=\"0; url=/pineapple/\">";
+echo "<meta http-equiv=\"refresh\" content=\"0; url=/CrossFire/\">";
 } ?>
 
 <title>CrossFire Dashboard</title>
@@ -84,6 +84,7 @@ echo "<meta http-equiv=\"refresh\" content=\"0; url=/pineapple/\">";
 </head>
 <body>
 
+<?php require('includes/ascii.php'); ?>
 <?php require('includes/navbar.php'); ?>
 <pre>
 

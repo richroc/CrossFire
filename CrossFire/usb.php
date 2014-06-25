@@ -5,6 +5,7 @@
 </head>
 <body>
 
+<?php require('includes/ascii.php'); ?>
 <?php require('includes/navbar.php'); ?>
 <pre>
 <?php

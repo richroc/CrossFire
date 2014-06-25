@@ -13,6 +13,7 @@ if(isset($_GET[drop_caches])) {
 </head>
 <body>
 
+<?php require('includes/ascii.php'); ?>
 <?php require('includes/navbar.php'); ?>
 
 <table border="0" width="100%"><tr><td align="left" valign="top" width="80%">

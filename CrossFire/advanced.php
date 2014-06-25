@@ -5,6 +5,7 @@
 </head>
 <body bgcolor="black" text="white" alink="green" vlink="green" link="green">
 
+<?php require('includes/ascii.php'); ?>
 <?php require('includes/navbar.php'); ?>
 
 <table border="0" width="100%"><tr><td align="left" valign="top" width="700">
@@ -50,11 +51,11 @@ if ($newdata != '') {
 }
 
 if(isset($_POST['clearcache']) && $_POST['clearcache'] == "1") {
-exec("echo '' > /www/pineapple/logs/associations.log");
-exec("echo '' > /www/pineapple/logs/urlsnarf.log");
-exec("echo '' > /www/pineapple/logs/urlsnarf-clean.log");
-exec("echo '' > /www/pineapple/logs/ngrep.log");
-exec("echo '' > /www/pineapple/logs/ngrep-clean.log");
+exec("echo '' > /www/CrossFire/logs/associations.log");
+exec("echo '' > /www/CrossFire/logs/urlsnarf.log");
+exec("echo '' > /www/CrossFire/logs/urlsnarf-clean.log");
+exec("echo '' > /www/CrossFire/logs/ngrep.log");
+exec("echo '' > /www/CrossFire/logs/ngrep-clean.log");
 echo "<font color='lime'><b>Cache Cleared</b></font><br />";
 }
 
@@ -105,12 +106,3 @@ foreach($output as $outputline) {echo ("$outputline\n");}?>
 <pre>
 
 <form method="post" action="<?php echo $_SERVER[php_self]?>"><input type="hidden" name="clearcache" value="1"><input type="submit" value="Clear Cache" onClick="return confirm('If you shutdown before disabling services like Karma, you may still have sessions in the background, clearing the cache will remove them.')"></form><form method="post" action="<?php echo $_SERVER[php_self]?>"><input type="hidden" name="factoryreset" value="1"><input type="submit" value="Factory Reset" onClick="return confirm('Are you sure you want to reset to factory default configuration? This change cannot be undone.')"></form><form method="post" action="<?php echo $_SERVER[php_self]?>"><input type="hidden" name="reboot" value="1"><input type="submit" value="Reboot" onClick="return confirm('Are you sure you want to reboot?')"></form>
-
-<red>  _____                   ______ _          
-<orange> / ____|                 |  ____(_)         
-<yellow>| |     _ __ ___  ___ ___| |__   _ _ __ ___ 
-<lime>| |    | '__/ _ \/ __/ __|  __| | | '__/ _ \
-<green>| |____| | | (_) \__ \__ \ |    | | | |  __/
-<cyan> \_____|_|  \___/|___/___/_|    |_|_|  \___|<pink>  BETA!</pink>
-
-

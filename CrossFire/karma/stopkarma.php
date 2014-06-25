@@ -1,6 +1,6 @@
 <?php
 exec ("echo '' > /tmp/karma.log");
-exec ("echo '' > /www/pineapple/logs/associations.log");
+exec ("echo '' > /www/CrossFire/logs/associations.log");
 exec ("hostapd_cli -p /var/run/hostapd-phy0 karma_disable");
 exec ("kill `ps auxww | grep update-associations.sh | grep -v -e grep | awk '{print $1}'`");
 ?>

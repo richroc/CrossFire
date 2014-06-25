@@ -23,6 +23,7 @@ if(isset($_GET[webDownload]) && trim(file_get_contents('webUpgrade.status')) == 
 </head>
 <body>
 
+<?php require('includes/ascii.php'); ?>
 <?php require('includes/navbar.php'); ?>
 <pre>
 <?php

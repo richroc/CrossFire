@@ -1,2 +1,2 @@
 #!/bin/sh
-urlsnarf -i br-lan >> /www/pineapple/logs/urlsnarf.log
+urlsnarf -i br-lan >> /www/CrossFire/logs/urlsnarf.log

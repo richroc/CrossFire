@@ -52,6 +52,7 @@ if(isset($_GET[getModule], $_GET[moduleVersion], $_GET[destination])){
 </head>
 <body>
 
+<?php require('includes/ascii.php'); ?>
 <?php require('includes/navbar.php'); ?>
 <pre>
 <?php
