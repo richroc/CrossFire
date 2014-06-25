@@ -4,7 +4,7 @@
 <script  type="text/javascript" src="includes/jquery.min.js"></script>
 </head>
 <body bgcolor="black" text="white" alink="green" vlink="green" link="green">
-
+<?php require('../includes/ascii.php'); ?>
 <?php require('../includes/navbar.php'); ?>
 
 <table border="0" width="100%"><tr><td align="left" valign="top" width="80%">
@@ -22,15 +22,8 @@ echo ("$outputline\n");}
 ?>
 
 </pre>
-</td><td valign="top" align="left" width="*">
-<pre>
-
-
-
-
-<?php require('../includes/ascii.php'); ?>
-
-</pre>
-</td></tr></table>
+</td>
+</tr>
+</table>
 </body>
 </html>
