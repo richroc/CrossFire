@@ -95,7 +95,7 @@
 			<?php
 				echo "&nbsp;LAN/WAN Port: " . exec("ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'") . "<br />";
 				echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3G Modem: " . exec("ifconfig 3g-wan2 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'") . "<br />";
-				echo "&nbsp;BRIDGE Port: " . exec("ifconfig br-lan | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1'") . "<br />;
+				echo "&nbsp;BRIDGE Port: " . exec("ifconfig br-lan | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1'") . "<br />";
 				echo "&nbsp; External IP: "; 
 				if (isset($_GET[revealpublic])) {
 					echo exec("wget -qO- http://cloud.wifipineapple.com/ip.php") . "<br />";
