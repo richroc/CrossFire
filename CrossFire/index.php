@@ -64,7 +64,7 @@
 					echo "DNS Spoof  <disabled>disabled</disabled> | <a href=\"dnsspoof/startdnsspoof.php\"><b>Start</b></a> | <a href=\"config.php#spoofhost\"><b>Edit</b></a><br/>";
 				}
 
-				$isngrepup = exec("ps | grep ngrep | grep -v -e grep | awk '{print $1}'");
+				$isngrepup = exec("ps w | grep ngrep | grep -v -e \"grep ngrep\" | awk '{print $1}'");
 				if ($isngrepup != "") {
 					echo "&nbsp;&nbsp;&nbsp;&nbsp;ngrep  <enabled>enabled</enabled>&nbsp; | <a href=\"ngrep/stopngrep.php\"><b>Stop</b></a><br />";
 				} else {

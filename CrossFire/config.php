@@ -140,10 +140,10 @@ $changeLink = "<a href='karma/changeBW.php'>change</a>";
 <br><input type='submit' name='addMAC' value='Add to List'><input type='submit' name='removeMAC' value='Remove from List'>
 </form>
 </td></tr>
-<!--<tr><td>
+<tr><td>
 
-<?php /*
-$filename = "/etc/config/wireless";
+<?php
+  $filename = "/etc/config/wireless";
   $fh = fopen($filename, "r") or die("Could not open file!");
   $data = fread($fh, filesize($filename)) or die("Could not read file!");
   fclose($fh);
@@ -153,13 +153,13 @@ $filename = "/etc/config/wireless";
 <input type='hidden' name='filename' value='/etc/config/wireless'>
 <br><input type='submit' value='Update Wireless'>
 </form>";
-*/?>
+?>
 </td><td valign="top" align="left">
 Wireless configuration for non-karma mode. 
-</td></tr>-->
-<!--<tr><td>
+</td></tr>
+<tr><td>
 
-<?php /*
+<?php
 $filename = "/etc/config/network";
   $fh = fopen($filename, "r") or die("Could not open file!");
   $data = fread($fh, filesize($filename)) or die("Could not read file!");
@@ -170,13 +170,13 @@ $filename = "/etc/config/network";
 <input type='hidden' name='filename' value='/etc/config/network'>
 <br><input type='submit' value='Update Network'>
 </form>";
-*/ ?>
+?>
 </td><td valign="top" align="left">
 LAN Configurations. ipaddr specifies the device IP Address while the gateway specifies the IP address from which Internet access can be obtained. DNS specifies a DNS server necessary for name resolution.
-</td></tr>-->
-<!--<tr><td>
+</td></tr>
+<tr><td>
 
-<?php /*
+<?php
 $filename = "/etc/config/dhcp";
   $fh = fopen($filename, "r") or die("Could not open file!");
   $data = fread($fh, filesize($filename)) or die("Could not read file!");
@@ -187,29 +187,29 @@ $filename = "/etc/config/dhcp";
 <input type='hidden' name='filename' value='/etc/config/dhcp'>
 <br><input type='submit' value='Update DHCP'>
 </form>";
-*/ ?>
+ ?>
 
 </td><td valign="top" align="left"> 
 Dynamic Host Configuration Protocol. Gives out IP and DNS information to connecting clients. dhcp_option #3 specifies the IP address of the gateway from which Internet access can be obtained. #6 specifies the DNS servers from which names may be resolved. 
-</td></tr>-->
+</td></tr>
 <tr><td>
 
-<?php /*
-$filename = "/www/CrossFire/ngrep.sh";
+<?php
+$filename = "/www/CrossFire/ngrep/ngrep.sh";
   $fh = fopen($filename, "r") or die("Could not open file!");
   $data = fread($fh, filesize($filename)) or die("Could not read file!");
   fclose($fh);
  echo "<a name='ngrep'><b>Ngrep</b>
 <form action='$_SERVER[php_self]' method= 'post' >
 <textarea name='newdata' cols='80' rows='20' style='background-color:black; color:white; border-style:dashed;'>$data</textarea>
-<input type='hidden' name='filename' value='/www/CrossFire/ngrep.sh'>
+<input type='hidden' name='filename' value='/www/CrossFire/ngrep/ngrep.sh'>
 <br><input type='submit' value='Update Ngrep'>
 </form>";
-*/ ?>
+ ?>
 
-<!--</td><td valign="top" align="left">
+</td><td valign="top" align="left">
 ngrep configuration. Like grep, but for the network.
-</td></tr>-->
+</td></tr>
 <tr><td>
 
 
